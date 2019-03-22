@@ -8,7 +8,7 @@ export function postChatwork(roomId: string, title: string, message: string) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
-            'X-ChatWorkToken': process.env.CW_TOKEN
+            'Authorization': `Bearer ${process.env.CW_ACCESS_TOKEN}`
         }
     }, {
         body: `[info][title]${title}[/title]${message}[/info]`,

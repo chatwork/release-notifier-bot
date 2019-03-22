@@ -9,8 +9,8 @@ if (argvs['cmd'] === 'chatworkComment') {
     if (!argvs['roomId']) {
         throw new Error(`roomId required`);
     }
-    if (!process.env.CW_TOKEN) {
-        throw new Error(`process.env.CW_TOKEN required`);
+    if (!process.env.CW_ACCESS_TOKEN) {
+        throw new Error(`process.env.CW_ACCESS_TOKEN required`);
     }
     chatworkComment(argvs['roomId'], argvs['message'] || '');
 } else {
