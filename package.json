@@ -1,0 +1,13 @@
+{
+  "name": "release-notifier-bot",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^11.11.3",
+    "typescript": "^3.3.4000"
+  }
+}
